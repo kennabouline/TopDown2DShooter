@@ -145,3 +145,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   enemyTag: Zombie
+  isBullet: 1

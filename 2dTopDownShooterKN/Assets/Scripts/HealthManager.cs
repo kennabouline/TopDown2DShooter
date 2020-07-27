@@ -6,6 +6,7 @@ public class HealthManager : MonoBehaviour
 {
     public float health;
     public Behaviour[] myComponents;
+    public bool isPlayer;
 
     public void TakeDamage(float damage)
     {
@@ -19,10 +20,18 @@ public class HealthManager : MonoBehaviour
 
     public void Die()
     {
-        foreach (var item in myComponents)
+        if (isPlayer)
         {
-            item.enabled = false;
+            foreach (var item in myComponents)
+            {
+                item.enabled = false;
+            }
         }
+        else
+        {
+            Destroy(gameObject);
+        }
+
        
     }
 
