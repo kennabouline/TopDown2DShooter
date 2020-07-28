@@ -151,10 +151,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86f84d0ee693c8f4b923c96ee2e77bf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  MaxHealth: 5
   myComponents:
   - {fileID: 2936980362543997689}
   - {fileID: 4097210822537614508}
+  isPlayer: 0
+  healthBar: {fileID: 0}
 --- !u!114 &4419451822689498552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,3 +171,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   enemyTag: Player
+  isBullet: 0

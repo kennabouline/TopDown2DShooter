@@ -12,6 +12,7 @@ public class ZombieSpawner : MonoBehaviour
     void Start()
     {
         InvokeRepeating("Spawn", 2f, 2f);
+        InvokeRepeating("Spawn", 1f, 3f);
 
     }
 
@@ -30,6 +31,7 @@ public class ZombieSpawner : MonoBehaviour
     public void Spawn()
     {
         Instantiate(zombiePrefab, RandomCircle(Vector3.zero, 20), Quaternion.identity);
+        
     }
 
 }
