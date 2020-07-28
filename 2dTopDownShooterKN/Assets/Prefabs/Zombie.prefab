@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86f84d0ee693c8f4b923c96ee2e77bf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 5
+  MaxHealth: 15
   myComponents:
   - {fileID: 2936980362543997689}
   - {fileID: 4097210822537614508}

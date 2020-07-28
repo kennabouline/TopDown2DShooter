@@ -13,10 +13,19 @@ public class HealthManager : MonoBehaviour
 
     private void Start()
     {
-        health = MaxHealth;
+       
         if (isPlayer)
         {
+            health = MaxHealth;
+
             healthBar.fillAmount = health / MaxHealth;
+           
+           
+
+        }
+        else
+        {
+            health = Random.value * MaxHealth;
         }
     }
     public void TakeDamage(float damage)
